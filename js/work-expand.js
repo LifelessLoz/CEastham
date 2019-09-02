@@ -1,6 +1,6 @@
 $('.work-button').click(function() {
     $('.carousel').css({
-        'height': '90vh',
+        'height': '85vh',
     });
     $('.footer-container').css({
       'display': 'none',
@@ -9,7 +9,7 @@ $('.work-button').click(function() {
 
 $('.bot-work-button').click(function() {
     $('.carousel').css({
-        'height': '90vh',
+        'height': '85vh',
     });
     $('.footer-container').css({
       'display': 'none',
@@ -18,7 +18,7 @@ $('.bot-work-button').click(function() {
 
 $('#work-image').hover(function() {
     $('.carousel').css({
-        'height': '90vh',
+        'height': '85vh',
     });
     $('.footer-container').css({
       'display': 'none',
