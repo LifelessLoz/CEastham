@@ -107,6 +107,22 @@
   padding: 0 4px;
 }
 
+@media only screen and (max-width: 800px){
+  #work-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  #work-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 #work-column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -120,7 +136,9 @@
   transition: 0.3s;
 }
 
-.imgTest:hover {opacity: 0.7;}
+.imgTest:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
