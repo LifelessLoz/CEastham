@@ -42,3 +42,14 @@ $('.contact-button').hover(function() {
     });
   }
 });
+
+$('.contact-button').click(function() {
+  $('.carousel').css({
+      'height': '70vh',
+  });
+  if ($(window).width() < 800) {
+    $('.footer-container').css({
+      'display': 'block',
+    });
+  }
+});
