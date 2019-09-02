@@ -1,9 +1,14 @@
+.body {
+  overflow-x: hidden;
+}
+
 .carousel{
   position: relative;
   height: 70vh;
   width: 100%;
   margin: 0 auto;
   transition: all .5s linear;
+  overflow-x: hidden;
 }
 
 .carousel__image{
@@ -136,7 +141,8 @@
 .modal-content {
   margin: auto;
   display: block;
-  height: 80%;
+  height: auto;
+  max-height: 80%;
   width: auto;
   max-width: 80%;
   object-fit: contain;
@@ -227,6 +233,7 @@ CONTACT INFORMATION css
 .hovereffect img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
