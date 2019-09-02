@@ -1,6 +1,7 @@
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const workButton = document.querySelector('.work-button');
+const botWorkButton = document.querySelector('.bot-work-button');
 const contactButton = document.querySelector('.contact-button');
 const homeButton = document.querySelector('.home-button');
 var slidePosition = 2;
@@ -52,6 +53,28 @@ workButton.addEventListener('mouseover', e => {
 });
 
 workButton.addEventListener('click', e => {
+  if (slidePosition == 4){
+    null;
+  }
+  else {
+    const nextSlide = slides[4];
+    slidePosition = 4;
+    moveToSlide(track, nextSlide);
+  }
+});
+
+botWorkButton.addEventListener('mouseover', e => {
+  if (slidePosition == 4){
+    null;
+  }
+  else {
+    const nextSlide = slides[3];
+    slidePosition = 3;
+    moveToSlide(track, nextSlide);
+  }
+});
+
+botWorkButton.addEventListener('click', e => {
   if (slidePosition == 4){
     null;
   }
