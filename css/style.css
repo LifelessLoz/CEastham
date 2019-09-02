@@ -46,9 +46,33 @@
   position: relative;
 }
 
+.footer-container{
+  height: 15vh;
+  object-position: center;
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  #home_container{
+    display: none;
+  }
+}
+
 .contact-container{
   background-color: #c4c4c4;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+  .work-button{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .footer-container{
+    display: block;
+  }
 }
 
 .work-container{
@@ -72,6 +96,17 @@
 }
 
 .work-button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.bot-work-button h1 {
+  color: black;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.bot-work-button:hover {
   text-decoration: none;
   color: black;
 }
