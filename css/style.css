@@ -40,13 +40,14 @@
 }
 
 .top-container{
-  height: 15vh;
+  height: 10vh;
   margin: 0 auto;
   padding: 0;
   position: relative;
 }
 
 .footer-container{
+  height: 10vh;
   object-position: center;
   display: none;
 }
