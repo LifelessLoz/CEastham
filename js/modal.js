@@ -11,14 +11,20 @@ var showModal = function(){
   captionText.innerHTML = this.alt;
 }
 
+
+modal.addEventListener('click', function(e){
+  if(document.getElementById("myModal").style.display === "block"){
+    if (document.getElementById('img01').contains(e.target)){
+      modal.style.display = "block";
+    } else {
+      modal.style.display = "none";
+    }
+  }
+  else {
+
+  }
+});
+
 for (var i = 0; i < img.length; i++){
   img[i].addEventListener('click', showModal);
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modal")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
 }
